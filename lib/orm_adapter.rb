@@ -1,6 +1,8 @@
 require 'orm_adapter/base'
 require 'orm_adapter/to_adapter'
 require 'orm_adapter/version'
+require 'rom'
+require 'pry'
 
 module OrmAdapter
   # A collection of registered adapters
@@ -13,3 +15,4 @@ require 'orm_adapter/adapters/active_record' if defined?(ActiveRecord::Base)
 require 'orm_adapter/adapters/data_mapper'   if defined?(DataMapper::Resource)
 require 'orm_adapter/adapters/mongoid'       if defined?(Mongoid::Document)
 require 'orm_adapter/adapters/mongo_mapper'  if defined?(MongoMapper::Document)
+require 'orm_adapter/adapters/rom_adapter'   if defined?(ROM)

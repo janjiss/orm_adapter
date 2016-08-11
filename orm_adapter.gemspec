@@ -30,5 +30,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "datamapper", ">= 1.0"
   s.add_development_dependency "dm-sqlite-adapter", ">= 1.0"
   s.add_development_dependency "dm-active_model", ">= 1.0"
+  s.add_development_dependency "rom", ">= 2.0.0"
+  s.add_development_dependency "rom-repository"
+  s.add_development_dependency "rom-sql"
 end
-
